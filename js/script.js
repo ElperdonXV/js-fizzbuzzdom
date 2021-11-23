@@ -1,5 +1,8 @@
 //Scrivi un programma che stampi in console i numeri da 1 a 100.
+const container = document.querySelector('.container');
 for (let index=1; index<=100; index++) {
+    const element = document.createElement('div');
+    console.dir(element);
     if (index % 3 == 0) {
         console.log('Fizz', index);
     }
