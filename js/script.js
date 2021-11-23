@@ -1,7 +1,15 @@
 //Scrivi un programma che stampi in console i numeri da 1 a 100.
 for (let index=1; index<=100; index++) {
+    if (index % 3 == 0) {
+        console.log('Fizz', index);
+    }
+    if (index % 5 == 0){
+        console.log('Buzz', index);
+    }
+    if (index % 3 ==0 && index % 5 == 0){
+        console.log('FizzBuzz', index);
+    }
     console.log(index);
-}
 
 //MILESTONE 1
 //Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
@@ -14,3 +22,4 @@ for (let index=1; index<=100; index++) {
 //Applica uno stile differente a seconda del valore dell’indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli di 3 che di 5.
 
 
+}
