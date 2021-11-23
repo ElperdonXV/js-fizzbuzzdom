@@ -4,17 +4,19 @@ for (let index=1; index<=100; index++) {
     const element = document.createElement('div');
     console.dir(element);
     element.classList.add('box');
-    element.append(index);
     if (index % 3 == 0) {
         console.log('Fizz', index);
+        element.append('Fizz');
     }
     else if (index % 5 == 0){
         console.log('Buzz', index);
+        element.append('Buzz');
     }
     else if (index % 3 ==0 && index % 5 == 0){
         console.log('FizzBuzz', index);
+        element.append('FizzBuzz');
     }
-    else console.log(index);
+    else element.append(index);
 
     container.append(element);
 
