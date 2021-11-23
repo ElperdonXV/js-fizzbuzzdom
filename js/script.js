@@ -4,6 +4,7 @@ for (let index=1; index<=100; index++) {
     const element = document.createElement('div');
     console.dir(element);
     element.classList.add('box');
+    element.append(index);
     if (index % 3 == 0) {
         console.log('Fizz', index);
     }
@@ -14,6 +15,8 @@ for (let index=1; index<=100; index++) {
         console.log('FizzBuzz', index);
     }
     else console.log(index);
+
+    container.append(element);
 
 //MILESTONE 1
 //Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
