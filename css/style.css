@@ -19,8 +19,20 @@ html{
 .box {
   width: 200px;
   height: 200px;
-  border: 1px solid blue;
+  background-color: lightskyblue;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.red{
+    background-color: red;
 }
