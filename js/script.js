@@ -3,6 +3,7 @@ const container = document.querySelector('.container');
 for (let index=1; index<=100; index++) {
     const element = document.createElement('div');
     console.dir(element);
+    element.classList.add('box');
     if (index % 3 == 0) {
         console.log('Fizz', index);
     }
